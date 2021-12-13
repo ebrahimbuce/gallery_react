@@ -1,0 +1,15 @@
+.scroll_Y::-webkit-scrollbar {
+  width: 5px; /* Tamaño del scroll en vertical */
+  height: 5px; /* Tamaño del scroll en horizontal */
+  transition: background 0.4s ease;
+}
+.scroll_Y::-webkit-scrollbar-thumb {
+  background: rgba(200, 200, 200, 0.4);
+  border-radius: 4px;
+}
+.scroll_Y::-webkit-scrollbar-thumb:hover {
+  background: #dbdbdb;
+}
+.scroll_Y::-webkit-scrollbar-thumb:active {
+  background-color: #d8d7d7;
+}

@@ -1,0 +1,20 @@
+.content_chip {
+  max-width: 120%;
+  display: inline-flex;
+}
+
+.scroll-X::-webkit-scrollbar {
+  width: 5px; /* Tamaño del scroll en vertical */
+  height: 5px; /* Tamaño del scroll en horizontal */
+  transition: background 0.4s ease;
+}
+.scroll-X::-webkit-scrollbar-thumb {
+  background: rgba(200, 200, 200, 0.4);
+  border-radius: 4px;
+}
+.scroll-X::-webkit-scrollbar-thumb:hover {
+  background: #dbdbdb;
+}
+.scroll-X::-webkit-scrollbar-thumb:active {
+  background-color: #d8d7d7;
+}

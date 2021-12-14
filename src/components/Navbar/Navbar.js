@@ -20,10 +20,9 @@ import { useDebouncedCallback } from "use-lodash-debounce";
 
 export default function Navbar() {
   const { handleSearch } = useFetchQuery();
+  const debounced = useDebouncedCallback(handleSearch, 700);
   const colorMode = useContext(ColorModeContext);
   const theme = useTheme();
-
-  const debounced = useDebouncedCallback(handleSearch, 500);
 
   return (
     <Box sx={{ flexGrow: 1, marginBottom: "3rem" }}>

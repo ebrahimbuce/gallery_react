@@ -5,6 +5,8 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { Box, Chip, CircularProgress } from "@mui/material";
 import { CategoryPictures } from "../constant/CategoryChip";
 
+import GetResultsSearch from "../services/useEffects/GetResultsSearch";
+
 import "./styles.css";
 
 const propsChip = {
@@ -23,6 +25,7 @@ const propsContentChip = {
 
 export default function Home() {
   const { results, hasMore, updatePage, handleSearch } = useFetchQuery();
+  GetResultsSearch();
 
   return (
     <div>

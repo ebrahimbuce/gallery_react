@@ -44,7 +44,11 @@ export default function Navbar() {
             label="Search"
             defaultValue=""
             type="text"
-            onChange={(e) => debounced(e.target.value.toLowerCase())}
+            onChange={(e) => {
+              e.preventDefault();
+              debounced(e.target.value.toLowerCase());
+              e.target.value = "";
+            }}
           />
 
           <IconButton onClick={colorMode.toggleColorMode}>

@@ -16,8 +16,8 @@ export default function useFetchQuery() {
   const updatePage = () => dispatch(setPage());
 
   //* Function reset state
-  const resetState = () => {
-    dispatch(clear_search_text());
+  const resetState = async () => {
+    await dispatch(clear_search_text());
     dispatch(resetStateScroll());
   };
 

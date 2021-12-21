@@ -47,7 +47,6 @@ export default function Navbar() {
             onChange={(e) => {
               e.preventDefault();
               debounced(e.target.value.toLowerCase());
-              e.target.value = "";
             }}
           />
 
